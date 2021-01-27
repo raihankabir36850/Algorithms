@@ -11,7 +11,7 @@ function aVeryBigSum(ar) {
 }
 
 
-//problem no:2
+//problem no:02
 //name:Diagonal Difference 
 /*
  * Complete the 'diagonalDifference' function below.
@@ -31,3 +31,44 @@ function diagonalDifference(arr) {
 
 }
 
+
+//problem no:03
+//name: staircase
+// Complete the staircase function below.
+function staircase(n) {
+    for (let i = 1; i <= n; i++) {
+        var step = '';
+        for (let j = 0; j < n; j++) {
+            if (j < n - i) {
+                step += ' ';
+            } else {
+                step += '#'
+            }
+        }
+        console.log(step)
+    }
+}
+
+//problem no:04
+//problem:plus minus
+// Complete the plusMinus function below.
+function plusMinus(arr) {
+    let zeroCount = 0;
+    let positiveCount = 0;
+    let negativeCount = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == 0) {
+            zeroCount++
+        } else if (arr[i] > 0) {
+            positiveCount++
+        } else {
+            negativeCount++
+        }
+    }
+    const ratiopositive = (positiveCount / arr.length).toPrecision(7)
+    console.log(ratiopositive)
+    const rationegative = (negativeCount / arr.length).toPrecision(7)
+    console.log(rationegative)
+    const ratiozero = (zeroCount / arr.length).toPrecision(7)
+    console.log(ratiozero)
+}
