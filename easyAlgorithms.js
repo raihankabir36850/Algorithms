@@ -125,3 +125,18 @@ function miniMaxSum(arr) {
     console.log(minimum, maximum)
 }
 
+//problem no:07
+//name:find out power of base 10
+//complete the algorithm
+function base(b) {
+    return function (n) {
+        let result = 1;
+        for (let i = 0; i < n; i++) {
+            result *= b;
+        }
+        return result;
+    }
+}
+var power = base(2)
+var result = power(3)
+console.log(result)
