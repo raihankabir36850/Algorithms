@@ -127,6 +127,7 @@ function miniMaxSum(arr) {
 
 //problem no:07
 //name:find out power of base 10
+//and it's concept of higher order function
 //complete the algorithm
 function base(b) {
     return function (n) {
