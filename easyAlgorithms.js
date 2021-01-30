@@ -28,7 +28,6 @@ function diagonalDifference(arr) {
     }
     const diff = Math.abs(firstDiagonalSum - secondDiagomalSum)
     return diff;
-
 }
 
 
