@@ -48,6 +48,7 @@ function staircase(n) {
     }
 }
 
+
 //problem no:04
 //problem:plus minus
 // Complete the plusMinus function below.
@@ -73,7 +74,6 @@ function plusMinus(arr) {
 }
 
 
-
 //problem no:05
 //name:Birthday Cake Candles
 /*
@@ -81,7 +81,6 @@ function plusMinus(arr) {
  * The function is expected to return an INTEGER.
  * The function accepts INTEGER_ARRAY candles as parameter.
  */
-
 function birthdayCakeCandles(candles) {
     // Write your code here
     let tallestHeight = 0;
@@ -98,6 +97,7 @@ function birthdayCakeCandles(candles) {
     }
     return count;
 }
+
 
 //problem no:06
 //name:Mini-Max Sum
@@ -123,6 +123,7 @@ function miniMaxSum(arr) {
     let maximum = sum - smallNumber;
     console.log(minimum, maximum)
 }
+
 
 //problem no:07
 //name:find out 5 power of base 3
@@ -165,7 +166,6 @@ main(10)
 
 //problem no:9
 //name: grading students
-
 function gradingStudents(grades) {
     // Write your code here
     let grade = new Array(grades.length);
@@ -182,7 +182,6 @@ function gradingStudents(grades) {
 }
 const re = gradingStudents([84, 83, 68, 98, 100, 10, 15]);
 console.log(re);
-
 
 
 //problem no:10
@@ -203,6 +202,7 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
     }
     console.log(`${appleCount}\n${orangeCount}`)
 }
+
 
 //problem no:11
 //name:Number Line Jump
@@ -241,6 +241,22 @@ function breakingRecords(scores) {
         }
     }
     return [hightestCount, lowestCount];
+}
+
+
+// problem no:13
+//name:Divisible Sum Pairs
+// Complete the divisibleSumPairs function below.
+function divisibleSumPairs(n, k, ar) {
+    let count = 0;
+    for (let firstElement = 0; i < ar.length; firstElement++) {
+        for (let secondElement = 1 + firstElement; j < ar.length; secondElement++) {
+            if ((ar[firstElement] + ar[secondElement]) % k == 0) {
+                count += 1;
+            }
+        }
+    }
+    return count;
 }
 
 
